@@ -1,0 +1,14 @@
+.productos-page {
+  h2 {
+    color: var(--verde);
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    overflow-x: auto;
+  }
+
+  button {
+    margin-bottom: 1rem;
+  }
+}
