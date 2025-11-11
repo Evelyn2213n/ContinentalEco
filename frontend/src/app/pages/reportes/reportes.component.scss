@@ -1,0 +1,30 @@
+.reportes-page {
+  h2 {
+    color: var(--verde);
+    margin-bottom: 1rem;
+  }
+
+  .report-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+
+    .report-item {
+      background: var(--verde-claro);
+      color: white;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.2s;
+
+      &:hover {
+        transform: translateY(-4px);
+        background: var(--verde);
+      }
+
+      h3 {
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.sidebar {
+  width: 230px;
+  background: #388e3c;
+  color: white;
+  height: 100vh;
+  padding-top: 2rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: all 0.3s ease;
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      margin: 0.5rem 0;
+
+      a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        padding: 0.7rem 1rem;
+        transition: 0.2s;
+        border-left: 4px solid transparent;
+
+        &:hover,
+        &.active {
+          background: rgba(255, 255, 255, 0.2);
+          border-left-color: #a5d6a7;
+        }
+      }
+    }
+  }
+}
