@@ -3,6 +3,9 @@
     color: var(--verde);
     margin-bottom: 1rem;
   }
+  h2, h1 {
+  margin-left: 20px; /* opcional si quieres alinearlo mejor */
+}
 
   .card {
     overflow-x: auto;

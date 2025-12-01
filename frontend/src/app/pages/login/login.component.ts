@@ -17,9 +17,12 @@ export class LoginComponent {
 
   constructor(private auth: AuthService, private router: Router) {}
 
-  onLogin() {
-    if (!this.auth.login(this.username, this.password)) {
-      alert('Credenciales incorrectas');
-    }
+onLogin() {
+  console.log("CLICK DETECTADO");  // <-- AGREGA ESTA LÍNEA
+
+  if (!this.auth.login(this.username, this.password)) {
+    alert('Credenciales incorrectas');
   }
+}
+
 }

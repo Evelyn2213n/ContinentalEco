@@ -1,0 +1,12 @@
+{
+  "horarios": [
+    { "id": 1, "dia": "Lunes - Viernes", "horaInicio": "6:00 am", "horaFin": "10:00 am", "descripcion": "Recolección matutina" },
+    { "id": 2, "dia": "Sábados", "horaInicio": "7:00 am", "horaFin": "11:00 am", "descripcion": "Recolección zonas críticas" }
+  ],
+  "rutas": [
+    { "id": 1, "nombre": "Ruta Norte", "descripcion": "Cobertura de Av. Principal hasta Urbanización Norte" },
+    { "id": 2, "nombre": "Ruta Centro", "descripcion": "Centro de Huancayo y alrededores" }
+  ],
+  "puntosCriticos": [],
+  "zonasReciclaje": []
+}

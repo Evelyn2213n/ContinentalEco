@@ -1,8 +1,18 @@
-<nav class="sidebar">
-  <ul>
-    <li><a routerLink="usuarios" routerLinkActive="active">👥 Usuarios</a></li>
-    <li><a routerLink="productos" routerLinkActive="active">📦 Productos</a></li>
-    <li><a routerLink="reportes" routerLinkActive="active">📊 Reportes</a></li>
-    <li><a (click)="logout()">🚪 Cerrar sesión</a></li>
+<div class="sidebar">
+  <ul class="menu">
+
+    <li><a routerLink="/dashboard/usuarios" routerLinkActive="active">👥 Usuarios</a></li>
+    <li><a routerLink="/dashboard/reciclaje" routerLinkActive="active">📦 Productos</a></li>
+    <li><a routerLink="/dashboard/puntos-criticos" routerLinkActive="active">📊 Reportes</a></li>
+    <li><a (click)="logout()">📕 Cerrar sesión</a></li>
+
+    <li class="title">Gestión de recolección</li>
+
+    <li><a routerLink="/dashboard/horarios" routerLinkActive="active">🕒 Horario de recolección</a></li>
+    <li><a routerLink="/dashboard/rutas" routerLinkActive="active">🗺️ Rutas</a></li>
+    <li><a routerLink="/dashboard/puntos-criticos" routerLinkActive="active">⚠️ Puntos críticos</a></li>
+    <li><a routerLink="/dashboard/reciclaje" routerLinkActive="active">♻️ Zonas de reciclaje</a></li>
+    <li><a routerLink="/dashboard/mas-info" routerLinkActive="active">ℹ️ Más información</a></li>
+
   </ul>
-</nav>
+</div>

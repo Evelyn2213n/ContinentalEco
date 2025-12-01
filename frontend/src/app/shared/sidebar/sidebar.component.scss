@@ -1,35 +1,78 @@
+/* ==== CONTENEDOR PRINCIPAL ==== */
 .sidebar {
-  width: 230px;
-  background: #388e3c;
-  color: white;
-  height: 100vh;
-  padding-top: 2rem;
   position: fixed;
+  top: 70px; /* Debe coincidir con la altura del header */
   left: 0;
-  top: 0;
-  transition: all 0.3s ease;
+  width: 260px;
+  height: calc(100vh - 70px);
+  background: #20732d; /* Verde uniforme elegante */
+  padding: 1.2rem 1rem;
+  overflow-y: auto;
+  z-index: 10; /* Para permitir clics correctamente */
+}
 
-  ul {
-    list-style: none;
-    padding: 0;
+/* ==== LISTA ==== */
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-    li {
-      margin: 0.5rem 0;
+/* ==== CADA ELEMENTO ==== */
+.menu li {
+  margin-bottom: 1rem;
+}
 
-      a {
-        color: white;
-        text-decoration: none;
-        display: block;
-        padding: 0.7rem 1rem;
-        transition: 0.2s;
-        border-left: 4px solid transparent;
+/* ==== TÍTULOS DE SECCIÓN ==== */
+.menu .title {
+  margin-top: 2rem;
+  margin-bottom: 0.3rem;
+  font-size: 13px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #c8e6c9;
+}
 
-        &:hover,
-        &.active {
-          background: rgba(255, 255, 255, 0.2);
-          border-left-color: #a5d6a7;
-        }
-      }
-    }
-  }
+/* ==== LINKS ==== */
+.menu a {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  padding: 0.65rem 0.9rem;
+  font-size: 17px;
+  font-weight: 500;
+
+  text-decoration: none;
+  color: white;
+  background: transparent;
+
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+}
+
+/* ==== HOVER Y ACTIVO ==== */
+.menu a:hover,
+.menu a.active {
+  background: rgba(255, 255, 255, 0.18);
+}
+
+/* ==== ESTILO DE LOS ICONOS ==== */
+.menu a::before {
+  font-size: 18px;
+}
+
+/* ==== SCROLLBAR ELEGANTE ==== */
+.sidebar::-webkit-scrollbar {
+  width: 7px;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.35);
 }
